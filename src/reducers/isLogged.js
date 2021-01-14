@@ -3,9 +3,9 @@ const loggedReducer = (state = false, action) =>{
         case "SIGN_IN":
             return state = action.status;
         case "SIGN_OUT":
-            return !state;
-        default:
             return state = action.status;
+        default:
+            return state;
     }
 }
 
